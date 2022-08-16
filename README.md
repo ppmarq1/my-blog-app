@@ -2,7 +2,7 @@
 
 # Blog App
 
-The Blog app will be a classic example of a blog website. It is a Microverse project where they required me to create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
+The Blog app is a classic example of a blog website. I created a fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
