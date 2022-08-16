@@ -1,2 +1,24 @@
-# my-blog-app
-The Blog app is a classic example of a blog website. I  created a fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
