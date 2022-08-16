@@ -1,24 +1,40 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Blog App
 
-Things you may want to cover:
+The Blog app will be a classic example of a blog website. It is a Microverse project where they required me to create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-* Ruby version
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-* System dependencies
+- Copy this link `https://github.com/ppmarq1/my-blog-app`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `https://github.com/ppmarq1/my-blog-app`.
+- Go to the repository folder in your command prompt `cd blog-app`.
 
-* Configuration
+- Follow these steps to run the app:
+  - run `gem install`, then run `rails s`
 
-* Database creation
+## Authors
 
-* Database initialization
+👤 **Pedro Marques**
 
-* How to run the test suite
+- GitHub: https://github.com/ppmarq1
+- Twitter: https://twitter.com/ppmarq1
+- LinkedIn: https://br.linkedin.com/in/pedroalmeidamarques/
+## 🤝 Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+Contributions, issues, and feature requests are welcome!
 
-* Deployment instructions
+Feel free to check the [issues page](https://github.com/ppmarq1/my-blog-app/issues).
 
-* ...
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
