@@ -1,9 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  User.create(name: 'Lilly', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'A beautiful beach',
-              post_counter: 0)
-  subject { Post.new(user_id: user.id, title: 'Hello', text: 'This is my first post') }
+  user = User.create(name: 'Lilly', bio: 'teacher in Brazil')
+  user.save
+
+  subject do
+    Post.new(title: 'My new post', text: 'Hello', author: user)
+  end
+
   before { subject.save }
 
   it 'title should be present' do
