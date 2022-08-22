@@ -7,14 +7,9 @@ The Blog app is a classic example of a blog website. I created a fully functiona
 For this project you will have full freedom in terms of visual design but you will need to keep the following wireframes:
 
 <p align="center">
-  <img src="./images/blog_login.png" alt="Login page wireframe" width="250px" />
+  <img src="./wireframes.png/>
   <img src="./images/blog_root_users.png" alt="All users page wireframe"  width="250px"  />
   <img src="./images/blog_user_page.png" alt="Single user page wireframe"  width="250px"  />
-</p>
-
-<p align="center">
-  <img src="./images/blog_user_all_posts.png" alt="All posts by a given user page wireframe"  width="250px"  />
-  <img src="./images/blog_single_post.png" alt="Single post page wireframe"  width="250px"  />
 </p>
 
 ## Getting Started
