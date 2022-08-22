@@ -7,7 +7,6 @@ RSpec.describe Post, type: :model do
 
   subject do
     Post.new(title: 'My new post', text: 'Hello', user_id: user.id)
-
   end
 
   before { subject.save }
