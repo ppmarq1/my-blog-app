@@ -7,6 +7,7 @@ ruby '3.1.2'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 gem 'rubocop'
 gem 'rubocop-rails'
+gem 'sqlite3', '~> 1.4'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -69,6 +70,8 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'ffi', '~> 1.15', '>= 1.15.5'
+  gem 'rspec-activemodel-mocks'
   gem 'rspec-rails', '~> 4.0.0'
   gem 'selenium-webdriver'
   gem 'webdrivers'
