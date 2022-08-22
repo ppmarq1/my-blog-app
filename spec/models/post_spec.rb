@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   user = User.create(name: 'Lilly', bio: 'teacher in Brazil')
+
   user.save
 
   subject do
@@ -12,37 +13,49 @@ RSpec.describe Post, type: :model do
 
   it 'title should be present' do
     subject.title = nil
+
     expect(subject).to_not be_valid
   end
 
   it 'title should be invalid if it has more than 250 characters' do
     subject.title = 'My text, my text, my text, my text, my text,
+
     my text, my text, my text, my text, my text, my text,
+
     my text, my text, my text, my text, my text, my text,
+
      my text, my text, my text, my text, my text, my text,
+
     my text, my text, my text, my text, my text, my text,
+
     my text, my text, my text, my text, my text, my text,
+
     my text, my text'
+
     expect(subject).to_not be_valid
   end
 
   it 'comments_counter should be numeric' do
     subject.comments_counter = ''
+
     expect(subject).to_not be_valid
   end
 
   it 'comments_counter should be greater than or equal to 0' do
     subject.comments_counter = -1
+
     expect(subject).to_not be_valid
   end
 
   it 'likes_counter should be numeric' do
     subject.likes_counter = ''
+
     expect(subject).to_not be_valid
   end
 
   it 'likes_counter should be greater than or equal to 0' do
     subject.likes_counter = -1
+
     expect(subject).to_not be_valid
   end
 
@@ -60,6 +73,7 @@ RSpec.describe Post, type: :model do
 
   it 'update_users_posts_counter should increment the total posts by 1' do
     subject.update_users_posts_counter
+
     expect(subject.user.post_counter).to eq 1
   end
 end
