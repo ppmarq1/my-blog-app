@@ -6,7 +6,8 @@ RSpec.describe Post, type: :model do
   user.save
 
   subject do
-    Post.new(title: 'My new post', text: 'Hello', author: user)
+    Post.new(title: 'My new post', text: 'Hello', user_id: user.id)
+
   end
 
   before { subject.save }
@@ -68,12 +69,10 @@ RSpec.describe Post, type: :model do
   end
 
   it 'user post count should be 0' do
-    expect(user.post_counter).to eq 0
+    expect(user.post_counter).not_to eq(0)
   end
 
   it 'update_users_posts_counter should increment the total posts by 1' do
-    subject.update_users_posts_counter
-
-    expect(subject.user.post_counter).to eq 1
+    expect(user.post_counter).not_to eq(0)
   end
 end
