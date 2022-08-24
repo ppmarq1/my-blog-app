@@ -13,3 +13,133 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+.app_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list {
+  width: 40%;
+}
+
+.user {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user a {
+  text-decoration: none;
+  color: #000;
+}
+
+.user_details {
+  display: flex;
+  gap: 20px;
+}
+
+.user_photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(241, 228, 228);
+}
+
+.user_name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user_name h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.user_name h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0;
+  text-align: right;
+}
+
+.user_bio {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user_posts {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user_posts h4 {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.btn_bottom {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn_all_posts {
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.user_comments {
+  padding-left: 20px;
+}
+
+.post_details {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post_details_title {
+  display: flex;
+  justify-content: space-between;
+}
