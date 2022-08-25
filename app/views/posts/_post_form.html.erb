@@ -1,0 +1,7 @@
+<%= form_with model: @post, url: user_posts_path, local: true do |f| %>
+  <div class="post_form_element">
+    <%= f.text_field :title, class:"input_from", placeholder: "Title", autofocus: true %>
+    <%= f.text_area :text, class:"textarea_from", placeholder: "Text..." %>
+    <%= f.submit 'Create post', class:"btn_submit_from" %>
+  </div
+<% end %>
