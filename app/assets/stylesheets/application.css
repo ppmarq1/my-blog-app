@@ -145,11 +145,6 @@ a {
   justify-content: space-between;
 }
 
-.post_details_title {
-  display: flex;
-  justify-content: space-between;
-}
-
 .btn_create_post {
   display: flex;
   justify-content: right;
