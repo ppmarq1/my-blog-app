@@ -1,0 +1,5 @@
+<%= form_with url: post_likes_path(@post.id) do |f| %>
+  <div class="like_form_element">
+    <%= f.submit 'Give a Like', class:"btn_submit_like_from" %>
+  </div>
+<% end %>

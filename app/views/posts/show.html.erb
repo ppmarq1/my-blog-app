@@ -1,6 +1,7 @@
 <main>
   <div class="list">
     <div class="post_details">
+      <%= link_to 'Back', user_posts_path, class:"btn_back" %>
       <div class="post_details_title">
         <h3><%= @post.title %> , by <%= @user.name %></h3>
         <h4><span>Comment <%= @post.comments_counter %></span> <span>|</span> <span>Likes <%= @post.likes_counter %></span></h4>
@@ -10,9 +11,15 @@
         <p><%= @post.text %></p>
       </div>
       <hr>
+      <div class="post_details_likes">
+        <%= render "posts/like_form" %>
+      </div>
+      <div class="post_details_comments">
+        <%= render "posts/comment_form" %>
+      </div>
       <div class="user_comments">
         <% if @comments.length == 0 %>
-          <p>Be the first to comment</p>
+          <p>No comments for now. Be the first to comment</p>
         <% else %>
           <% @comments.each do |comment| %>
             <p><%= comment.user.name%>: <%= comment.text%></p>
