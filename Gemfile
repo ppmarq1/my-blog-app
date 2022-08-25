@@ -9,7 +9,7 @@ gem 'rails-controller-testing'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 gem 'rubocop'
 gem 'rubocop-rails'
-gem 'sqlite3', '~> 1.4'
+# gem 'sqlite3', '~> 1.4'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'

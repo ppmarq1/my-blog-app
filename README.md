@@ -4,6 +4,12 @@
 
 The Blog app is a classic example of a blog website. I created a fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
+For this project you will have full freedom in terms of visual design but you will need to keep the following wireframes:
+
+
+  <img src="./app/assets/images/wireframes.png" alt="">
+
+
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
@@ -36,5 +42,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
+- Inspiration.
 - etc.
