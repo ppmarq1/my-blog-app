@@ -7,6 +7,8 @@ gem 'rails-controller-testing'
 
 gem 'bootstrap_form', '~> 5.1'
 
+gem 'bullet'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 gem 'rubocop'
