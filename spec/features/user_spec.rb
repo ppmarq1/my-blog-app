@@ -5,20 +5,20 @@ RSpec.describe 'Users pages test', type: :feature do
     before :each do
       @user_first = User.create(name: 'Grabrielle', photo: 'mybaby.png', bio: 'A cute baby', post_counter: 0)
       @user_second = User.create(name: 'Joelle', photo: 'mybaby.png', bio: 'A beautiful lady', post_counter: 1)
-      @user_third = User.create(name: 'Roland', photo: 'mybaby.png', bio: 'A good guy', post_counter: 2)
+      @user_third = User.create(name: 'Pedro', photo: 'mybaby.png', bio: 'A good guy', post_counter: 2)
     end
 
     it 'check users#index path' do
       visit '/'
       expect(current_path).to eq(root_path)
-      expect(page).to have_text('DreamArt Blog')
+      expect(page).to have_text('My Blog App')
     end
 
     it 'Should display all user names' do
       visit '/'
       expect(page).to have_content('Grabrielle')
       expect(page).to have_content('Joelle')
-      expect(page).to have_content('Roland')
+      expect(page).to have_content('Pedro')
     end
 
     it 'Should set the link of the picture to the img src' do
@@ -67,7 +67,7 @@ RSpec.describe 'Users pages test', type: :feature do
     it 'check users#show path' do
       visit user_path(@user_first.id)
       expect(current_path).to eq(user_path(@user_first.id))
-      expect(page).to have_text('DreamArt Blog')
+      expect(page).to have_text('My Blog App')
     end
 
     it 'Should set the link of the picture to the img src' do
