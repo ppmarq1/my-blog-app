@@ -248,3 +248,20 @@ a {
   width: 100%;
   margin-bottom: 10px;
 }
+
+.sign_out {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+}
+
+.btn_signout_from {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
