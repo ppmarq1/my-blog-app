@@ -29,6 +29,12 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: https://github.com/ppmarq1
 - Twitter: https://twitter.com/ppmarq1
 - LinkedIn: https://br.linkedin.com/in/pedroalmeidamarques/
+
+👤 **Stanley SIMEON**
+
+- GitHub: [@stanleySimeon](https://github.com/stanleySimeon)
+- Twitter: [@mstanleyme](https://twitter.com/mstanleyme)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/stanleysimeon/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
