@@ -7,6 +7,8 @@ gem 'rails-controller-testing'
 
 gem 'bootstrap_form', '~> 5.1'
 
+gem 'bullet'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 gem 'rubocop'
@@ -64,6 +66,10 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
+  gem 'rspec-rails', '~> 4.0.0'
+
+  gem 'capybara'
+
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
@@ -73,10 +79,9 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
   gem 'ffi', '~> 1.15', '>= 1.15.5'
   gem 'rspec-activemodel-mocks'
-  gem 'rspec-rails', '~> 4.0.0'
+
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
