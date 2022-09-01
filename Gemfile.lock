@@ -80,6 +80,7 @@ GEM
     bullet (7.0.3)
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.11)
+    cancancan (3.4.0)
     capybara (3.37.1)
       addressable
       matrix
@@ -287,6 +288,7 @@ DEPENDENCIES
   bootsnap
   bootstrap_form (~> 5.1)
   bullet
+  cancancan
   capybara
   devise (~> 4.8, >= 4.8.1)
   ffi (~> 1.15, >= 1.15.5)
