@@ -262,6 +262,11 @@ a {
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
+}
+
+.other_links {
+  width: 30%;
+  margin: 0 35%;
 }
