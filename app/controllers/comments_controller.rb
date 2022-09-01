@@ -27,7 +27,7 @@ class CommentsController < ApplicationController
           redirect_to user_post_path(current_user, @comment.post.id)
         else
           flash.now[:error] = 'Comment was not deleted.'
-          render.show
+          flash.show
         end
       end
     end
