@@ -230,7 +230,6 @@ a {
 }
 
 .btn_submit_like_from {
-  width: -moz-fit-content;
   width: fit-content;
   font-size: 13px;
   border: none;
@@ -268,9 +267,8 @@ a {
 }
 
 .other_links {
-  display: flex;
   width: 30%;
   gap: 20px;
-  margin: 0 50px;
+  margin: 0 40%;
   color: blue;
 }
