@@ -1,31 +1,40 @@
-<main>
-  <div class="list">
     <div class="post_details">
-      <%= link_to 'Back', user_posts_path, class:"btn_back" %>
-      <div class="post_details_title">
-        <h3><%= @post.title %> , by <%= @user.name %></h3>
-        <h4><span>Comment <%= @post.comments_counter %></span> <span>|</span> <span>Likes <%= @post.likes_counter %></span></h4>
-      </div>
-    
-      <div class="post_details_text">
-        <p><%= @post.text %></p>
-      </div>
-      <hr>
-      <div class="post_details_likes">
-        <%= render "posts/like_form" %>
-      </div>
-      <div class="post_details_comments">
-        <%= render "posts/comment_form" %>
-      </div>
-      <div class="user_comments">
-        <% if @comments.length == 0 %>
-          <p>No comments for now. Be the first to comment</p>
-        <% else %>
-          <% @comments.each do |comment| %>
-            <p><%= comment.user.name%>: <%= comment.text%></p>
-          <%end%>
-        <% end %>
-      </div>
-    </div>
+  <%= link_to 'Back', user_posts_path, class:"btn_back" %>
+  <div class="post_details_title">
+    <h3><%= @post.title %> , by <%= @user.name %></h3>
+    <span>
+      <h4><span>Comment <%= @post.comments_counter %></span> <span>|</span> <span>Likes <%= @post.likes_counter %></span></h4>
+      <% if can? :destroy, @post %>
+        <div class="btn_delete">
+          <%= button_to "Delete this post", { action: :destroy, id: @post.id }, method: :delete, class: "btn_delete_post"  %>
+        </div>
+      <% end %>
+    </span>
   </div>
-</main>
+
+  <div class="post_details_text">
+    <p><%= @post.text %></p>
+  </div>
+  <hr>
+  <div class="post_details_likes">
+    <%= render "posts/like_form" %>
+  </div>
+  <div class="post_details_comments">
+    <%= render "posts/comment_form" %>
+  </div>
+  <div class="user_comments">
+    <h4><u>Comments:</u></h4>
+    <% if @comments.length == 0 %>
+      <p> Be the first to comment</p>
+    <% else %>
+      <% @comments.each do |comment| %>
+        <div class="user_comment_element">
+          <p><%= comment.user.name%>: <%= comment.text%></p>
+          <% if can? :destroy, comment %>
+            <%= button_to "Delete Comment", post_comment_path(post_id: @post.id, comment_id: comment.id), method: :delete, data: { turbo: false }, class: "btn_delete_comment"  %>
+          <% end %>
+        </div>
+      <%end%>
+    <% end %>
+  </div>
+</div>
