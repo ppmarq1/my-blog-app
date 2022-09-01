@@ -19,10 +19,18 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:comment_id])
     @post = Post.find(@comment.post_id)
     @comment.destroy!
-
-    @comment.post.decrement!(:comments_counter)
-    flash[:success] = 'Comment deleted successfully'
-    redirect_to user_post_path(current_user, @comment.post_id)
+    respond_to do |format|
+      format.html do
+        if @comment.destroy
+          @post.decrement!(:comments_counter)
+          flash[:success] = 'Comment was successfully deleted.'
+          redirect_to user_post_path(current_user, @comment.post.id)
+        else
+          flash.now[:error] = 'Comment was not deleted.'
+          render.show
+        end
+      end
+    end
   end
 
   def comment_params
