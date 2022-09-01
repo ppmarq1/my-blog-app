@@ -16,6 +16,6 @@ class Post < ApplicationRecord
   end
 
   def as_json(_options = {})
-    { id: id, title: title, text: text }
+    { id:, title:, text: }
   end
 end
