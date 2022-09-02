@@ -25,13 +25,7 @@ development:
   <<: *default
   database: blog_app_development
   username: postgres
-<<<<<<< HEAD
   password: Eduardo1!@
-=======
-  # password: Eduardo1!@
-  password: Martial@5009
-  
->>>>>>> 9338c15910f392da82082c93a55045ab6c83a08d
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
   #username: Project
