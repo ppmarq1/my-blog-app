@@ -11,6 +11,10 @@ gem 'bullet'
 
 gem 'cancancan'
 
+gem 'jwt'
+
+gem 'rswag'
+
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
