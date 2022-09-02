@@ -11,10 +11,6 @@ gem 'bullet'
 
 gem 'cancancan'
 
-gem 'jwt'
-
-gem 'rswag'
-
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
 gem 'jwt'
