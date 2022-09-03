@@ -40,6 +40,10 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
+gem 'devise-jwt', '~> 0.9.0'
+gem 'rack-cors'
+gem 'bcrypt', '~> 3.1.7'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -73,6 +77,8 @@ group :development do
   gem 'rspec-rails', '~> 4.0.0'
 
   gem 'capybara'
+
+  gem 'dotenv-rails'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
