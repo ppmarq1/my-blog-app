@@ -11,7 +11,6 @@ gem 'bullet'
 
 gem 'cancancan'
 
-gem 'rswag'
 gem 'rswag-api'
 gem 'rswag-ui'
 
