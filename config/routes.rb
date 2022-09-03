@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   # Defines the root path route ("/")
+  mount Rswag::Ui::Engine => '/api-docs'
+  mount Rswag::Api::Engine => '/api-docs'
+  
   root 'users#index'
   
   devise_for :users,
