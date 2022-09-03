@@ -40,8 +40,10 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
-gem 'devise-jwt', '~> 0.9.0'
 gem 'bcrypt', '~> 3.1.7'
+
+gem 'devise-jwt', '~> 0.9.0'
+
 gem 'rack-cors'
 
 # Use Redis adapter to run Action Cable in production
