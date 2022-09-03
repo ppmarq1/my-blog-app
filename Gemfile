@@ -11,7 +11,14 @@ gem 'bullet'
 
 gem 'cancancan'
 
+gem 'rswag-api'
+gem 'rswag-ui'
+
 gem 'devise', '~> 4.8', '>= 4.8.1'
+
+gem 'jwt'
+
+gem 'rswag'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
@@ -40,6 +47,12 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'devise-jwt', '~> 0.9.0'
+
+gem 'rack-cors'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -62,8 +75,7 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  # gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rswag-specs'
 end
 
 group :development do
@@ -73,6 +85,8 @@ group :development do
   gem 'rspec-rails', '~> 4.0.0'
 
   gem 'capybara'
+
+  gem 'dotenv-rails'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"

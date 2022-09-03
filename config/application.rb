@@ -8,8 +8,21 @@ Bundler.require(*Rails.groups)
 
 module BlogApp
   class Application < Rails::Application
+    config.api_only = true
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+    
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource(
+          '*',
+          headers: :any,
+          expose: ["Authorization"],
+          methods: [:get, :patch, :put, :delete, :post, :options,               :show]
+        )
+      end
+    end
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -18,5 +31,11 @@ module BlogApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.debug_exception_response_format = :default
+    config.session_store :cookie_store, key: '_interslice_session'
+
+    config.middleware.use ActionDispatch::Flash
+
+    config.middleware.use config.session_store, config.session_options
   end
 end
