@@ -269,7 +269,7 @@ Devise.setup do |config|
   config.sign_out_via = :delete
 
   config.jwt do |jwt|
-    jwt.secret = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlBlZHJvIiwiaWF0IjoxNTE2MjM5MDIyfQ.1GtNKQnKpePEE11oG-d-rFGDQgdPwO6dUNZYJ-yPdA8'
+    jwt.secret = 'eyJhbGciOiJIUzI1NiJ9.eyJleGFtcGxlIjoiZGF0YSJ9.r32JslR5aN9JBEowsXwpEYwYLL7BS3j3dqlKDHYO7_A'
     jwt.dispatch_requests = [
     ['POST', %r{^/login$}]
     ]
