@@ -2,7 +2,7 @@ AllCops:
   NewCops: enable
   Exclude:
     - "db/**/*"
-    - "bin/*" 
+    - "bin/*"
     - "config/**/*"
     - "Guardfile"
     - "Rakefile"
@@ -24,7 +24,7 @@ Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
   Max: 150
-Metrics/BlockLength:
+Metrics/AllowedMethods:
   IgnoredMethods: ['describe']
   Max: 30
 
